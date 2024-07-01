@@ -1,4 +1,4 @@
-steps:
+
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build', '-f', '.cloudbuild/Dockerfile.bazel-gapic', '-t', 'bazel-gapic', '.']
 - name: 'bazel-gapic'
