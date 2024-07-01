@@ -1,5 +1,13 @@
-# Google APIs
 
+
+import 'package:googleapis_auth/src/crypto/rsa_sign.dart';
+import 'package:test/test.dart';
+
+import '../test_utils.dart';
+
+void main() {
+  group('rsa-sha256-signer', () {
+    final signer = RS256Signer(testPrivateKey);
 This repository contains the original interface definitions of public
 Google APIs that support both REST and gRPC protocols. Reading the
 original interface definitions can provide a better understanding of
